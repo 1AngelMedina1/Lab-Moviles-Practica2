@@ -1,19 +1,186 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Hello World
+      <ion-grid>
+        <ion-row>
+          <ion-col size="9">
+            <img src="../../assets/images/IG logo.png" alt="">
+          
+          </ion-col>
+          <ion-col size="3" class="header-icon">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
+
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      
     </ion-toolbar>
   </ion-header>
-  <p>
-    Hola mundo
-  </p>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-grid>
+        <!--Stories-->
+
+    <ion-row>
+      <ion-slides>
+        <ion-slides [options]="slideOPts" pager= "true" class="stories">
+          <ion-slides>
+            <img src="../../assets/images/Historias/Story 5.png" alt="" width="60px">
+
+          </ion-slides>
+          <ion-slides>
+            <img src="../../assets/images/Historias/Story 1.png" alt="" width="60px">
+          </ion-slides>
+          <ion-slides>
+            <img src="../../assets/images/Historias/Story 2.png" alt="" width="60px">
+
+          </ion-slides>
+          <ion-slides>
+            <img src="../../assets/images/Historias/Story 3.png" alt="" width="60px">
+          </ion-slides>
+          <ion-slides>
+            <img src="../../assets/images/Historias/Story 4.png" alt="" width="60px">
+
+          </ion-slides>
+          
+          
+        </ion-slides>
+      </ion-slides>
+    </ion-row>
+
+
+
+
+    <!--Posts-->
+    <ion-row>
+      <ion-col>
+      <ion-card class="card-post">
+        <ion-card-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="11">
+                <img src="../../assets/images/Main Avatar.png" alt="perfil" width="20px">
+                <ion-text>
+                  Ruffles
+                </ion-text>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+
+        </ion-card-header>
+          <ion-slides [options]="slidepostsOpts" pager="true">
+            <ion-slides>
+              <img src="../../assets/images/Posts/morgan-aragon-BFyTdSthQDA-unsplash 1.png" alt="Poner imagen de la feed" width="100%">
+
+            </ion-slides>
+            <ion-slides>
+              <img src="../../assets/images/Posts/Doggos.png" alt="" width="100%">
+            </ion-slides>
+          </ion-slides>
+          
+            
+          
+
+        <div class="footer">
+          <div class="options">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="11">
+                  <ion-icon name="heart-outline" class="item-post"></ion-icon>
+                  <ion-icon name="chatbubble-outline" class="item-post"></ion-icon>
+                  <ion-icon name="paper-plane-outline" class="item-post"></ion-icon>
+                  
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+            
+          </div>
+          <div class="comment">
+            <img src="../../assets/images/Main Avatar.png" alt="" width="20px">
+            <ion-input placeholder="Escribir comentario"> </ion-input>
+          </div>
+            
+        </div>
+      </ion-card>
+   
+    </ion-col>
+
+    </ion-row>
+    
+  </ion-grid>
+  <!--Parte2-->
+  <!--Parte2-->
+  <!--Parte2-->
+  <!--Parte2-->
+  <!--Parte2-->
+  <ion-card class="card-post">
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="11">
+            <img src="../../assets/images/Main Avatar.png" alt="perfil" width="20px">
+            <ion-text>
+              Ruffles
+            </ion-text>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+
+    </ion-card-header>
+      <ion-slides [options]="slidepostsOpts" pager="true">
+        <ion-slides>
+          <img src="../../assets/images/Posts/morgan-aragon-BFyTdSthQDA-unsplash 1.png" alt="Poner imagen de la feed" width="100%">
+
+        </ion-slides>
+        <ion-slides>
+          <img src="../../assets/images/Posts/raul-angel-x8Ac6jee_3s-unsplash 1.png" alt="" width="100%">
+        </ion-slides>
+      </ion-slides>
+
+    <div class="footer">
+      <div class="options">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="11">
+              <ion-icon name="heart-outline" class="item-post"></ion-icon>
+              <ion-icon name="chatbubble-outline" class="item-post"></ion-icon>
+              <ion-icon name="paper-plane-outline" class="item-post"></ion-icon>
+              
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        
+      </div>
+      <div class="comment">
+        <img src="../../assets/images/Main Avatar.png" alt="" width="20px">
+        <ion-input placeholder="Escribir comentario"> </ion-input>
+      </div>
+        
+    </div>
+  </ion-card>
+  <app-explore-container name=""></app-explore-container>
 </ion-content>
